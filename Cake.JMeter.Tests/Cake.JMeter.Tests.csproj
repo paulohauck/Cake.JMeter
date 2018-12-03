@@ -37,12 +37,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cake.Core, Version=0.22.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\Cake.JMeter\packages\Cake.Core.0.22.2\lib\net46\Cake.Core.dll</HintPath>
+    <Reference Include="Cake.Core, Version=0.30.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Cake.JMeter\packages\Cake.Core.0.30.0\lib\net46\Cake.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Cake.Testing, Version=0.22.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\Cake.JMeter\packages\Cake.Testing.0.22.2\lib\net46\Cake.Testing.dll</HintPath>
+    <Reference Include="Cake.Testing, Version=0.30.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Cake.JMeter\packages\Cake.Testing.0.30.0\lib\net46\Cake.Testing.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -75,7 +75,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cake.JMeter\Cake.JMeter.csproj">
@@ -90,7 +92,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\Cake.JMeter\packages\xunit.runner.visualstudio.2.2.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\Cake.JMeter\packages\xunit.runner.visualstudio.2.2.0\build\net20\xunit.runner.visualstudio.props'))" />
   </Target>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
